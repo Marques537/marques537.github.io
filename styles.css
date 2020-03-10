@@ -84,6 +84,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
+        cursor: pointer;
       }
 .card{
   background-color: #7159c1;
@@ -159,28 +160,32 @@ iframe{
   border: 5px solid var(--color-green);
   height: 150px;
 }
+#whapper_cv h1, h2{
+  margin-bottom: 20px;
+  
+}
 .cv{
+  margin-left: none;
+  margin-right: none;
   margin-top: 40px;
-  display: grid;
-  grid-template-columns: 2fr 3fr 3fr;
-  margin-bottom: 100px;
-  gap: 20px;
+  text-align: center;
   padding: 15px;
 }
 
 #emprego {
-  padding: 50px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 30px;
   line-height: 25px;
-  max-width: 500px;
-  text-align: justify;
-  border-right: 1px  solid var(--color-green);
-  border-left: 1px solid rgba( 0, 0, 0,0.3);
+  text-align: center;
+  border-bottom: 2px solid var(--color-green);
 }
 #emprego2{
-  padding: 50px;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 30px;
   line-height: 25px;
-  max-width: 500px;
-  text-align: justify;
+  text-align: center;
 }
 
 #whapper_cv h1{
@@ -198,13 +203,11 @@ iframe{
   text-align: center;
 }
 
-
 #emprego2 p{
   font-weight: bold;
   margin-bottom: 10px;
-  text-align: center;
+  text-align: center; 
 }
 #name{
-  margin-left: 10px;
   text-align: center;
 }
