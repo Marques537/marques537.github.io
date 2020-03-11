@@ -19,6 +19,7 @@
         padding: 32px;
         border-bottom: 1px solid #333;
         background: rgba(0, 0, 0, 0.1);
+        
       }
 
       .links {
@@ -86,6 +87,77 @@
         gap: 20px;
         cursor: pointer;
       }
+
+@media (max-width: 750px){
+  .cards{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media  (pointer: coarse){
+  .cards{
+    grid-template-columns: 1fr;
+    margin-bottom: 30vh;
+  }
+  header{ 
+    padding: 5vh;
+  }
+  .links a{
+    font-size: 40px;
+  }
+
+  .cv h2{
+    margin-bottom: 150px;
+  }
+
+  #emprego p {
+    font-size: 35px;
+    max-width: 500px;
+    line-height: 50px;
+  }
+
+  #emprego2 p {
+    font-size: 35px;
+    max-width: 500px;
+    line-height: 50px;
+    font-weight: normal;
+  }
+  
+  #emprego h3{
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 100px;
+  }
+    #emprego h4{
+    font-size: 25px;
+    line-height: 50px;
+    opacity: 70%;
+    max-width: 500px;
+    margin-top: 20px;
+    font-weight: normal;
+}
+  #emprego2 h5{
+    font-size: 40px;
+    line-height: 50px;    
+}
+  #emprego2 h6{
+    font-size: 25px;
+    line-height: 50px;
+    opacity: 70%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+}
+
+
+@media (max-width: 470px){
+  .cards{
+    grid-template-columns: 1fr;
+  }
+}
 .card{
   background-color: #7159c1;
 }
@@ -160,9 +232,12 @@ iframe{
   border: 5px solid var(--color-green);
   height: 150px;
 }
-#whapper_cv h1, h2{
+#whapper_cv h1{
   margin-bottom: 20px;
   
+}
+.cv h2{
+  margin-bottom: 70px;
 }
 .cv{
   margin-left: none;
@@ -173,41 +248,69 @@ iframe{
 }
 
 #emprego {
-  max-width: 400px;
-  margin: 20px auto;
-  padding: 30px;
-  line-height: 25px;
+  padding: 0px 30px;
   text-align: center;
-  border-bottom: 2px solid var(--color-green);
+
 }
 #emprego2{
-  max-width: 400px;
-  margin: 10px auto;
-  padding: 30px;
-  line-height: 25px;
+  padding: 10px 30px 30px 30px;
   text-align: center;
 }
 
-#whapper_cv h1{
+.cv h3,h5{
   font-size: 20px;
 
 }
-#whapper_cv h2{
+.cv h4, h6{
   font-size: 18px;
   font-weight: normal;
 }
 
-#emprego p{
+#emprego h3, h4{
+  
   font-weight: bold;
   margin-bottom: 10px;
   text-align: center;
 }
 
-#emprego2 p{
+#emprego2 h5, h6{
+  
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#emprego p{
+    padding: 0px 20px 20px 30px;
+    border-bottom: 2px solid var(--color-green);
+}
+
+#emprego h3, h4, p{
+  line-height: 25px;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+#emprego2 h5, h6, p {
+  line-height: 25px;
+  max-width: 400px;
+  margin: 10px auto;
+}
+#emprego h3, h4{
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center; 
+}
+
+#emprego2 h5, h6{
   font-weight: bold;
   margin-bottom: 10px;
   text-align: center; 
 }
 #name{
   text-align: center;
+}
+#name h1, h2{
+max-width: 500px;
+margin: 10px auto;
+font-weight: normal;
 }
