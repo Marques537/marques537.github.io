@@ -109,23 +109,28 @@
   .cv h2{
     margin-bottom: 150px;
   }
-
+  #name h1, h2{
+    font-size: 40px;
+}
+ #whapper_cv #name img{
+   height: 350px;
+ }
   #emprego p {
     font-size: 35px;
-    max-width: 500px;
+    max-width: 70vmax;
     line-height: 50px;
   }
 
   #emprego2 p {
     font-size: 35px;
-    max-width: 500px;
+    max-width: 70vmax;
     line-height: 50px;
     font-weight: normal;
   }
   
   #emprego h3{
     font-size: 40px;
-    line-height: 50px;
+    line-height: 40px;
     margin-bottom: 100px;
   }
     #emprego h4{
@@ -227,10 +232,10 @@ iframe{
 }
 
 /* ===CV===*/
-#whapper_cv img{
+#name img{
   border-radius: 50%;
   border: 5px solid var(--color-green);
-  height: 150px;
+  height: 15vmax;
 }
 #whapper_cv h1{
   margin-bottom: 20px;
